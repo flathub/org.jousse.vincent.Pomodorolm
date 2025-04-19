@@ -1,7 +1,7 @@
 id: org.jousse.vincent.Pomodorolm
 
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "48"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/vjousse/pomodorolm.git
-        tag: app-v0.3.5
-        commit: 990d7caceeb9b25411ac673f49c7c8f6017b87d8
+        tag: app-v0.3.6
+        commit: d5c80e897cae1973505af8656560848d94810a04
 
       # flatpak-node-generator npm -o flatpak/node-sources.json package-lock.json
       - node-sources.json
