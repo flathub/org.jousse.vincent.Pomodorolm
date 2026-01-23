@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/vjousse/pomodorolm.git
-        tag: app-v0.7.0
-        commit: 8f40658790a08fae90acff69ae4cd3a2c96bbbbc
+        tag: app-v0.8.0
+        commit: 9dc42a6ca49d99c9b6a03383769efef8c43452e5
 
       # flatpak-node-generator npm -o flatpak/node-sources.json package-lock.json
       - node-sources.json
