@@ -1,11 +1,11 @@
 id: org.jousse.vincent.Pomodorolm
 
 runtime: org.gnome.Platform
-runtime-version: "50"
+runtime-version: "51"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
 
 command: pomodorolm
 finish-args:
@@ -19,7 +19,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
 
 build-options:
-  append-path: /usr/lib/sdk/node20/bin:/usr/lib/sdk/rust-stable/bin
+  append-path: /usr/lib/sdk/node22/bin:/usr/lib/sdk/rust-stable/bin
 
 modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/vjousse/pomodorolm.git
-        tag: app-v0.9.2
-        commit: e987e7675e01b8d7287da030e6823b15f636f876
+        tag: app-v0.9.3
+        commit: 55e59cbc04e43ca9500272e8df785d5e20a2eb92
 
       # flatpak-node-generator npm -o flatpak/node-sources.json package-lock.json
       - node-sources.json
