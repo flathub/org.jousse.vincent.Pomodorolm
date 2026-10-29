@@ -27,10 +27,9 @@ modules:
     buildsystem: simple
     sources:
       - type: git
-        url: https://github.com/vjousse/pomodorolm.git
-        tag: app-v0.9.3
-        commit: 55e59cbc04e43ca9500272e8df785d5e20a2eb92
-
+        url: https://github.com/vjousse/concentre.git
+        tag: app-v0.10.0
+        commit: 95c6745221f6861adc5f522b851edb3b258cd8a6
       # flatpak-node-generator npm -o flatpak/node-sources.json package-lock.json
       - node-sources.json
 
