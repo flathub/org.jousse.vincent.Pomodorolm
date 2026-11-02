@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/vjousse/concentre.git
-        tag: app-v0.10.0
-        commit: 95c6745221f6861adc5f522b851edb3b258cd8a6
+        tag: app-v0.10.1
+        commit: 2b2ac94ce00c4e7ee1a6e558656f7203aa5c107f
       # flatpak-node-generator npm -o flatpak/node-sources.json package-lock.json
       - node-sources.json
 
@@ -73,10 +73,7 @@ modules:
       - install -Dm755 -t /app/bin/ src-tauri/target/release/pomodorolm
 
       # Install icons
-      - install -Dm644 src-tauri/icons/32x32.png /app/share/icons/hicolor/32x32/apps/org.jousse.vincent.Pomodorolm.png
-      - install -Dm644 src-tauri/icons/128x128.png /app/share/icons/hicolor/128x128/apps/org.jousse.vincent.Pomodorolm.png
-      - install -Dm644 src-tauri/icons/128x128@2x.png /app/share/icons/hicolor/256x256/apps/org.jousse.vincent.Pomodorolm.png
-      - install -Dm644 src-tauri/icons/icon.png /app/share/icons/hicolor/256x256@2/apps/org.jousse.vincent.Pomodorolm.png
+      - install -Dm644 flatpak/org.jousse.vincent.Pomodorolm.svg /app/share/icons/hicolor/scalable/apps/org.jousse.vincent.Pomodorolm.svg
 
       # Copy the assets
       - mkdir -p /app/lib/pomodorolm
